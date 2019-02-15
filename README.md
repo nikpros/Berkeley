@@ -4,8 +4,8 @@ Garbage collector
 test.exe представляет из себя скомпанованный exe-файл из Py-скрипта, интерпретатора языка Python и необходимых модулей (requests, BeautifulSoup).
 
 Для успешного выполнения программы необходимо:
-  1. наличие подключения к сети Интернет;
-  2. существования директории (папки) pdf (!!!) рядом с исполняемым exe-файлом.
+  1. Наличие подключения к сети Интернет;
+  2. Существования директории (папки) pdf (!!!) рядом с исполняемым exe-файлом.
   
 Результатом работы программы станет наличие 20 pdf-файлов в директории /pdf. Источником скаченных файлов является фильтрованный по IT- и инженерно-прикладным тематикам архив научных статей Калифорнийского университета в Беркли (https://escholarship.org/search?campuses=ucb&departments=iber_resin&departments=citris&departments=crest&departments=cedr&disciplines=Engineering&disciplines=Physical+Sciences+and+Mathematics&type_of_work=article).
 
