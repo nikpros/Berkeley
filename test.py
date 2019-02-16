@@ -1,5 +1,4 @@
 import requests
-import sys, os
 from bs4 import BeautifulSoup
 
 #-- На этой стадии мы определямся с количеством обрабатываемых html-страниц
@@ -29,12 +28,6 @@ while i < 30: #(int(count)+1)*10: Боевой цикл на скачивани�
     #Download PDF-file
         pdf = requests.get(href_dow)
         
-        #--Определение текущей директории
-        pathname = os.path.dirname(sys.argv[0])        
-        newpath = os.path.abspath(pathname) + '/pdf'
-        #--Создание в текущей директории каталога pdf
-        if not os.path.exists(newpath):
-            os.makedirs(newpath)
         f = open("pdf/{}.pdf".format(iter), "wb")
         f.write(pdf.content)
         f.close()
